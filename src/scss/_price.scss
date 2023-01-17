@@ -1,0 +1,130 @@
+.section {
+    &__price {
+        margin-top: 40px;
+    }
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+    &__item {
+        flex: 0 1 50%;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 100%;
+        }
+        &.right__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('../img/price__bg.svg') center/ cover no-repeat;
+            height: 100%;
+            padding: 390px 0;
+            @media (max-width: $breakpoint768) {
+                background: url(../img/price__bg-mob.svg) center / cover no-repeat;
+                padding: 50px 0;
+                margin-top: 30px;
+            }
+            @media (max-width: $breakpoint1200) {
+                padding: 250px 0;
+            }
+        }
+       
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 40px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 20px;
+            gap: 12px;
+        }
+        
+    }
+
+    &__list-item {
+        padding: 8px 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+        border-radius: 24px;
+        @media (max-width: $breakpoint992) {
+            font-size: 14px;
+            gap: 8px;
+        }
+        @media (max-width: $breakpoint768) {
+           font-size: 12px;
+           padding: 4px 12px;
+        }
+    }
+    &__btn{
+        margin-top: 40px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 20px;
+            
+        }
+    }
+}
+
+.cost {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 80%;
+    letter-spacing: -0.03em;
+    color: $primary;
+    @media (max-width: $breakpoint992) {
+        font-size: 80px;
+
+    }
+    @media (max-width: $breakpoint768) {
+        font-size: 64px;
+    }
+}
+
+.period {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    margin-top: 16px;
+
+    border-radius: 24px;
+}
+
+.list {
+    &__item-1 {
+        color: #FF8B7A;
+        background: #FFF1EF;
+        border: 1px solid #FFD1CA;
+    }
+
+    &__item-2 {
+        color: #FFAC2F;
+        background: #FFF8EE;
+        border: 1px solid #FFCA7A;
+    }
+
+    &__item-3 {
+        color: #3ACD77;
+        background: #ECFFF4;
+        border: 1px solid #98FAC0;
+    }
+
+    &__item-4 {
+        color: #2BC0CA;
+        background: #F1FEFF;
+        border: 1px solid #6EE1E9;
+    }
+
+    &__item-5 {
+        color: #C140FD;
+        background: #FCF5FF;
+        border: 1px solid #EBBDFF;
+    }
+}
